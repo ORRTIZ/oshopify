@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2020 Somonar B.V.
+
+This file is subject to the terms and conditions defined in the
+files 'LICENSE' and 'NOTICE', which are part of this source
+code package.
+-->
+
+<ofbiz-component name="oshopify"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-component.xsd">
+    <!-- define resource loaders; most common is to use the component resource loader -->
+    <resource-loader name="main" type="component"/>
+
+    <!-- place the config directory on the classpath to access configuration files -->
+    <classpath type="dir" location="config"/>
+    <!-- entity resources: model(s), eca(s), group, and data definitions -->
+    <entity-resource type="model" reader-name="main" loader="main" location="entitydef/entitymodel.xml"/>
+    <!-- <entity-resource type="eca" reader-name="main" loader="main" location="entitydef/eecas.xml"/> -->
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/oshopifyTypeData.xml"/>
+    <entity-resource type="data" reader-name="seed" loader="main" location="data/oshopifySecurityPermissionSeedData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/oshopifySecurityGroupDemoData.xml"/>
+    <entity-resource type="data" reader-name="demo" loader="main" location="data/oshopifyDemoData.xml"/>
+
+    <!-- service resources: model(s), eca(s) and group definitions -->
+    <service-resource type="model" loader="main" location="servicedef/services.xml"/>
+    <!--
+    <service-resource type="eca" loader="main" location="servicedef/secas.xml"/>
+    <service-resource type="group" loader="main" location="servicedef/groups.xml"/>
+    -->
+
+    <test-suite loader="main" location="testdef/oshopifyTests.xml"/>
+
+    <!-- web applications; will be mounted when using the embedded container -->
+    <webapp name="oshopify"
+        title="Shopify Integration"
+        server="default-server"
+        location="webapp/oshopify"
+        base-permission="OFBTOOLS,oshopify"
+        menu-name="secondary"
+        app-bar-display="true"
+        mount-point="/oshopify"/>
+</ofbiz-component>

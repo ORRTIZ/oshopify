@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2020 Somonar B.V.
+
+This file is subject to the terms and conditions defined in the
+files 'LICENSE' and 'NOTICE', which are part of this source
+code package.
+-->
+
+<section xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="5.0"
+    xmlns:xl="http://www.w3.org/1999/xlink" 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xsi:schemaLocation="http://docbook.org/ns/docbook ../../../content/dtd/docbook.xsd"
+    xmlns="http://docbook.org/ns/docbook">
+    <title>oshopify  Overview</title>
+    <para>The oshopify Help file template.</para>
+</section>
+

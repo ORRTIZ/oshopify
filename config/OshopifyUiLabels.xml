@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2020 Somonar B.V.
+
+This file is subject to the terms and conditions defined in the
+files 'LICENSE' and 'NOTICE', which are part of this source
+code package.
+-->
+
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-properties.xsd">
+    <property key="oshopifyApplication">
+        <value xml:lang="en">Shopify Integration</value>
+    </property>
+    <property key="oshopifyCompanyName">
+        <value xml:lang="en">ORRTIZ: oshopify</value>
+    </property>
+    <property key="oshopifyCompanySubtitle">
+        <value xml:lang="en">Part of the ORRTIZ suite of Business Solutions</value>
+    </property>
+    <property key="oshopifyViewPermissionError">
+        <value xml:lang="en">You are not allowed to view this page.</value>
+    </property>
+</resource>
