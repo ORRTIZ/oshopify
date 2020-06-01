@@ -8,5 +8,9 @@ code package.
 -->
 
 <entity-engine-xml>
-
+    <SystemProperty systemResourceId="oshopify" systemPropertyId="host"
+        systemPropertyValue="{shop}.myshopify.com "
+        description="FQDN of your shopify shop."
+    />
+    
 </entity-engine-xml>

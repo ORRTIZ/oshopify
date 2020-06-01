@@ -19,6 +19,6 @@ code package.
         <para>
         </para>
     </section>
-        <xi:include href="../data/helpdata/HELP_oshopify.xml" />
+        <xi:include href="../data/oshopifyHelp.xml" />
     
 </chapter>
