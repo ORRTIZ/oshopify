@@ -9,8 +9,28 @@ code package.
 
 <entity-engine-xml>
     <SystemProperty systemResourceId="oshopify" systemPropertyId="host"
-        systemPropertyValue="{shop}.myshopify.com "
+        systemPropertyValue="{shop}.myshopify.com"
         description="FQDN of your shopify shop."
     />
-    
+
+    <SystemProperty systemResourceId="oshopify" systemPropertyId="api.version"
+        systemPropertyValue="2020-04"
+        description="Version of the shopify api"
+    />
+
+    <SystemProperty systemResourceId="oshopify" systemPropertyId="api.key"
+        systemPropertyValue="2020-04"
+        description="Your shopify api key"
+    />
+
+    <SystemProperty systemResourceId="oshopify" systemPropertyId="api.password"
+        systemPropertyValue="{yourPassword}"
+        description="Your shopify password associated with your api key."
+    />
+
+    <SystemProperty systemResourceId="oshopify" systemPropertyId="shop.state"
+        systemPropertyValue="test"
+        description="The state of your shopify shop. Options: 'test' or 'live' ."
+    />
+
 </entity-engine-xml>
